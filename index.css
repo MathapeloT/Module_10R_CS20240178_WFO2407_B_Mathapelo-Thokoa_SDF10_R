@@ -1,21 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #683471;
-    border: 5px solid white;
-    border-radius: 10px;
+    margin: 200px;
+    padding: 100px;
+    background-color: #b379bd;
 }
 
 .container {
-    width: 90%;
-    height: 10%;
+    width: 60%;
+    height: 580px;
     margin: auto;
+    background-color: #dec8e2;
+    border: 5px solid white;
+    border-radius: 10px;
     overflow: hidden;
-}
-
-h1 {
-    text-align: center;
 }
 
 img {
@@ -23,39 +20,22 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    width: 20%;
+    padding-left: 120px;
+    border-radius: 10px;
+    width: 40%;
     height: auto;
-}
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.product {
-    background: #e294e8cc;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-    width: calc(30% - 40px);
-    height: 70px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
-
-.product h2 {
-    font-size: 1.2em;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .add-to-cart {
     background: #701f70;
     color: #fff;
-    border: none;
+    border: 2px solid white;
+    margin-left: 120px;
     padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -64,36 +44,32 @@ img {
     background: #218838;
 }
 
-.cart {
-    display: flex;
-    flex-direction: row;
-    background: #ea12be;
-    border: 1px solid #ddd;
-    padding: 10px;
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+}
+
+.product {
+    background-color:#c376d1;
     border-radius: 5px;
-    margin: 150px 0;
-}
-
-#cart-items {
-    list-style:georgian;
-    padding: 5px;
-}
-
-#cart-items li {
-    padding: 15px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-
-#checkout {
-    background: #d400ff;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
+    margin: 20px;
+    margin-left: 120px;
+    padding-left: 40px;
+    width: calc(40% - 30px);
+    height: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    box-sizing: border-box;
     cursor: pointer;
 }
 
-#checkout:hover {
-    background: #46d93e;
+.product:hover {
+    background: #218838;
 }
+
+.product h2 {
+    font-size: 1.2em;
+}
+
